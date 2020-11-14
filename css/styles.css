@@ -184,7 +184,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .container_elements {
-    width: 45vw;
+    max-width: 635px;
+    min-height: 45vh;
   }
 }
 /*# sourceMappingURL=styles.css.map */
