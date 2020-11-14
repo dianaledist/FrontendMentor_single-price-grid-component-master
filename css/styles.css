@@ -14,7 +14,6 @@ body {
 .container {
   width: 100vw;
   height: auto;
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
