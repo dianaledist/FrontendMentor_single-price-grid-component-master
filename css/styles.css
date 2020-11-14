@@ -27,7 +27,7 @@ body {
 
 .container_elements {
   width: 90%;
-  min-height: 45vh;
+  min-height: 40vh;
   margin: 10% auto;
   -webkit-box-shadow: -1px 5px 23px -6px rgba(0, 0, 0, 0.233);
           box-shadow: -1px 5px 23px -6px rgba(0, 0, 0, 0.233);
@@ -70,15 +70,11 @@ body {
 .index_month {
   padding: 8%;
   background-color: #2ab2af;
-  /*     display: flex;
-    flex-flow: column wrap;
-    justify-content: center; */
 }
 
 .index_month_title {
   color: white;
   font-size: 1.2rem;
-  padding-top: 3%;
 }
 
 .index_month_price {
@@ -129,13 +125,12 @@ body {
 
 .index_whyus_title {
   font-size: 1.2rem;
-  padding-bottom: 7%;
+  padding-bottom: 5%;
 }
 
 .index_whyus_ul {
   list-style: none;
   line-height: 1.5rem;
-  padding-bottom: 5%;
 }
 
 .index_whyus_li {
