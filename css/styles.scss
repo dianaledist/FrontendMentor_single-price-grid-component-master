@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+$text-primary: 'Karla', sans-serif;
+
+$color-white: white;
+$color-primary: hsl(179, 62%, 43%);
+$color-primary-light:rgb(59, 185, 183);
+$color-primary-text:rgb(69, 212, 210);
+$color-secundary: hsl(71, 73%, 54%);
+$color-neutral: hsl(204, 43%, 93%);
+$color-neutral-gray: hsl(218, 22%, 67%);
+
+* {
+    margin: 0;
+    padding: 0;
+    color: $color-white;    
+    font-size: 16px;
+}
+
+body {
+    font-family: $text-primary;
+    background-color: $color-neutral;
+}
+
+.container {
+    width: 100vw;
+    height: auto;
+    border: 1px solid red;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    
+    &_elements {
+        width: 90%;
+        min-height: 45vh;
+        margin: 10% auto;
+        box-shadow: -1px 5px 23px -6px rgba(0, 0, 0, 0.233);        
+        background-color: $color-white;          
+
+        grid-template-areas: 
+        "header"
+        "details"
+        "contact";
+        grid-template-columns: none;
+        grid-template-rows: none;
+        margin: 5rem 2rem;
+        border-radius: 10px;
+    }  
+}
+
+.index_join {
+    grid-area: header;
+    background-color: $color-white;
+    padding: 8%;
+    border-radius: 10px 10px 0 0;
+    
+    &_title {
+        color: $color-primary;
+        font-size: 1.5rem;
+    }
+    &_subtitle {
+        padding-top: 5%;
+        color: $color-secundary;
+        font-size: 1.1rem;
+    }
+    &_text {
+        padding-top: 5%;
+        color: $color-neutral-gray;
+        line-height: 2rem;
+    }
+}
+
+.index_month {
+    padding: 8%;
+    background-color: $color-primary;
+/*     display: flex;
+    flex-flow: column wrap;
+    justify-content: center; */
+    &_title {
+        color: $color-white;
+        font-size: 1.2rem;
+        padding-top: 3%;
+    }
+    &_price {
+        padding-top: 6%;
+        padding-bottom: 4%;
+        display: flex;
+        align-items: center;
+        &_total {
+            color: $color-white;
+            font-size: 2.5rem;
+            padding-right: 5%;
+            font-weight: bold;
+        }        
+        &_text {
+            color: $color-primary-text;
+        }
+    }    
+    &_text {        
+        color: $color-white;
+        padding-bottom: 10%;
+    }
+    &_button {
+        background-color: $color-secundary;
+        border-radius: 5px;
+        text-decoration: none;
+        box-shadow: -1px 5px 23px -6px rgba(0, 0, 0, 0.233);
+        width: 95%;
+        padding: 5% 3%;
+        text-align: center;
+        display: inline-block;
+    }
+}
+
+.index_whyus {
+    padding: 8%;
+    background-color: $color-primary-light;
+    color: $color-white;
+    border-radius:  0 0 10px 10px;
+    &_title {
+        font-size: 1.2rem;
+        padding-bottom: 7%;
+    }
+    &_ul{
+        list-style: none;
+        line-height : 1.5rem;
+        padding-bottom: 5%;
+    }
+    &_li {
+        color: rgba(255, 255, 255, 0.685);
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; color: $color-neutral-gray}
+.attribution a { color: $color-primary; }
+
+
+@media screen and (min-width: 650px) {
+    
+    .container {
+        &_elements {
+            display: grid;        
+            grid-template-rows: 0.5fr 0.5fr;
+            grid-template-columns: 0.5fr 0.5fr;
+            grid-template-areas: 
+            "header header"
+            "details contact";
+            width: 60vw;
+        }
+    }   
+    
+    .index_join {
+        padding: 7%;
+        &_title {
+            font-size: 1.5rem;
+        }
+        &_subtitle {
+            padding-top: 4%;
+            font-size: 1.1rem;
+        }
+        &_text {
+            padding-top: 1%;
+            line-height: 2rem;
+        }
+    }
+    .index_month {
+        padding: 12%;
+        border-radius:  0 0 0 10px;
+    }
+    .index_whyus {
+        padding: 12%;
+        border-radius:  0 0 10px 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container_elements {
+        width: 50vw;
+    }    
+}
