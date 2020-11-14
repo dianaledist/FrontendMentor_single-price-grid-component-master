@@ -20,6 +20,10 @@ $color-neutral-gray: hsl(218, 22%, 67%);
 body {
     font-family: $text-primary;
     background-color: $color-neutral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0;
 }
 
 .container {
@@ -31,7 +35,7 @@ body {
     
     &_elements {
         width: 90%;
-        min-height: 40vh;
+        min-height: 30vh;
         margin: 10% auto;
         box-shadow: -1px 5px 23px -6px rgba(0, 0, 0, 0.233);        
         background-color: $color-white;          
@@ -42,7 +46,6 @@ body {
         "contact";
         grid-template-columns: none;
         grid-template-rows: none;
-        margin: 5rem 2rem;
         border-radius: 10px;
     }  
 }
@@ -67,6 +70,7 @@ body {
         color: $color-neutral-gray;
         line-height: 2rem;
     }
+    
 }
 
 .index_month {
@@ -104,6 +108,7 @@ body {
         padding: 5% 3%;
         text-align: center;
         display: inline-block;
+        font-weight: bold;
     }
 }
 
@@ -145,7 +150,7 @@ body {
     }   
     
     .index_join {
-        padding: 7%;
+        padding: 5.8%;
         &_title {
             font-size: 1.5rem;
         }
@@ -168,9 +173,8 @@ body {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
     .container_elements {
         max-width: 635px;
-        min-height: 45vh;
-    }    
+ }    
 }

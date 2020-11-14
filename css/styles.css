@@ -9,6 +9,16 @@
 body {
   font-family: "Karla", sans-serif;
   background-color: #e5eff5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 0;
 }
 
 .container {
@@ -27,7 +37,7 @@ body {
 
 .container_elements {
   width: 90%;
-  min-height: 40vh;
+  min-height: 30vh;
   margin: 10% auto;
   -webkit-box-shadow: -1px 5px 23px -6px rgba(0, 0, 0, 0.233);
           box-shadow: -1px 5px 23px -6px rgba(0, 0, 0, 0.233);
@@ -37,7 +47,6 @@ body {
       grid-template-columns: none;
   -ms-grid-rows: none;
       grid-template-rows: none;
-  margin: 5rem 2rem;
   border-radius: 10px;
 }
 
@@ -114,6 +123,7 @@ body {
   padding: 5% 3%;
   text-align: center;
   display: inline-block;
+  font-weight: bold;
 }
 
 .index_whyus {
@@ -159,7 +169,7 @@ body {
     width: 60vw;
   }
   .index_join {
-    padding: 7%;
+    padding: 5.8%;
   }
   .index_join_title {
     font-size: 1.5rem;
@@ -182,10 +192,9 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .container_elements {
     max-width: 635px;
-    min-height: 45vh;
   }
 }
 /*# sourceMappingURL=styles.css.map */
