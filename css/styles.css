@@ -36,7 +36,7 @@ body {
 }
 
 .container_elements {
-  width: 90%;
+  width: 85%;
   min-height: 30vh;
   margin: 10% auto;
   -webkit-box-shadow: -1px 5px 23px -6px rgba(0, 0, 0, 0.233);
@@ -110,7 +110,7 @@ body {
 
 .index_month_text {
   color: white;
-  padding-bottom: 10%;
+  padding-bottom: 12%;
 }
 
 .index_month_button {
@@ -120,7 +120,7 @@ body {
   -webkit-box-shadow: -1px 5px 23px -6px rgba(0, 0, 0, 0.233);
           box-shadow: -1px 5px 23px -6px rgba(0, 0, 0, 0.233);
   width: 95%;
-  padding: 5% 3%;
+  padding: 6% 3%;
   text-align: center;
   display: inline-block;
   font-weight: bold;
@@ -140,7 +140,7 @@ body {
 
 .index_whyus_ul {
   list-style: none;
-  line-height: 1.5rem;
+  line-height: 1.3rem;
 }
 
 .index_whyus_li {
@@ -180,7 +180,7 @@ body {
   }
   .index_join_text {
     padding-top: 1%;
-    line-height: 2rem;
+    line-height: 1.7rem;
   }
   .index_month {
     padding: 12%;
@@ -192,7 +192,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1000px) {
   .container_elements {
     max-width: 635px;
   }
